@@ -1,9 +1,32 @@
 class UsersController < ApplicationController
+
   def index
-      
+      @currentUser = User.find(1)
+      @users = User.all
+      if params[:type] == 'json' then
+       	 res = [
+      	      200,
+	      "Ok",
+	      @users
+      	      ]
+      	render json: res
+      end	 
   end
 
-  def login
-
+  def authenticate
+      result = {
+      	     "status" => 200
+	     "msg" => "Success"	    
+      }
+      render json: result
+  end
+      
+  def view
+        @user = User.find(1)
+        render json: @user
   end 
+
+  def render_json(code, message, data)
+  end
+      
 end

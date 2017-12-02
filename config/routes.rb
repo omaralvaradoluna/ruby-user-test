@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   post 'users/signin' # for create a users
   delete 'users/session' # 
   get 'users/session' #
-  post 'users/authenticate' # For authenticate already registered users
+  post 'users/authentication' # For authenticate already registered users
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
