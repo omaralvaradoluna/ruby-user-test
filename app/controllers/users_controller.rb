@@ -35,8 +35,20 @@ class UsersController < ApplicationController
   end
       
   def view
-        @user = User.find(1)
-        render json: @user
-  end 
+        begin
+		id = params[:id]
+        	@user = User.find(id)
+		render json: [
+		         200,
+		         "Ok",
+		         @user
+		       ]
+	rescue ActiveRecord::RecordNotFound => e
+  	       render json: [
+	       	      404,
+		      "User not found"		      
+	       ]
+  	end 
+   end
       
 end

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/index' # for list all users in the database, only allowed for authenticated users
+  get 'users/view'
   post 'users/signin' # for create a users
   delete 'users/session' # 
   get 'users/session' #
