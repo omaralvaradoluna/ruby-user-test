@@ -34,7 +34,7 @@ A last basic functionality added to index method was the possibility to ask for 
 ## Examples
 
 ![Image of Yaktocat]
-(https://github.com/omaralvaradoluna/ruby-user-test/blob/master/docs/ruby01.png)
+(https://github.com/omaralvaradoluna/ruby-user-test/docs/ruby01.png)
 
 [[https://github.com/omaralvaradoluna/ruby-user-test/blob/master/docs/ruby02.png|alt=octal]]
 
